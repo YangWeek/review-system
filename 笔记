@@ -1,0 +1,26 @@
+1 CQRS 架构
+
+2 git submodule
+项⽬中添加⼦模块。将 git@github.com:YangWeek/reviewapis.git 作为当前项⽬的⼦⽬录，⽬录名为 api 。
+
+项⽬中如何管理pb⽂件
+proto⽂件要⽤⼀个
+protoc要使⽤同⼀个版本
+通常在公司中都是把 proto ⽂件和⽣成的不同语⾔的代码都放在⼀个单独的公⽤代码库中。
+别的项⽬直接引⽤这个公⽤代码库。
+review-b --RPC--> review-service
+
+
+3 kratos 框架 官网的文档
+https://go-kratos.dev/docs/category/%E7%AE%80%E4%BB%8B
+
+4 consul 命令行启动
+···
+consul agent -dev
+···
+
+
+5 review-job 这个是实现任务的
+
+
+6 这个 canal 和 kafka 和 es 在 阿里云服务器上运行
